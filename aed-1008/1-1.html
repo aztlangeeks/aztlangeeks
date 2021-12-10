@@ -24,48 +24,44 @@
         <a href="#b">Ejercicio 2</a>
         <a href="#c">Ejercicio 3</a>
         <a href="#d">Ejercicio 4</a>
+        <a href="#e">Ejercicio 5</a>
         <span class="indicador" id="indicador"></span>
     </nav>
 
     <div class="seccion" id="a">
-        <h1>1.- Aritmética</h1>
-        <p>Escriba una aplicación que pida al usuario que escriba dos números, que obtenga los números del usuario e
-            imprima la suma, producto, diferencia y cociente (división) de los números.</p>
+        <h1>Ejercicio 01_01: Producto.java</h1>
+        <p>Escriba un programa completo que calcule e imprima el producto de tres enteros.</p>
         <div class="targeta">
             <code>
-                // Ejemplo 1: Aritmetica.java<br>
-                // Programa que recibe dos números y muestra la suma, resta, multipliacaión y división.<br>
+                // Ejemplo 01_01: Producto.java
+                <br>// Calcular el producto de tres enteros.
+                <br>package ex01_01;
                 <br>
-                import java.util.Scanner;<br>
+                <br>import java.util.Scanner;
                 <br>
-                public class Aritmetica {<br>
+                <br>public class Producto {
                 <br>
-                public static void main(String[] args) {<br>
-                Scanner entrada = new Scanner(System.in);<br>
+                <br> public static void main(String[] args) {
+                <br> Scanner sc = new Scanner(System.in);
                 <br>
-                int numero1;<br>
-                int numero2;<br>
-                int suma;<br>
-                int resta;<br>
-                int multiplicacion;<br>
-                int division;<br>
+                <br> int x;
+                <br> int y;
+                <br> int z;
+                <br> int resultado;
                 <br>
-                System.out.print("Escribe el primer entero: ");<br>
-                numero1 = entrada.nextInt();<br>
+                <br> System.out.print("Escriba el primer entero: ");
+                <br> x = sc.nextInt();
                 <br>
-                System.out.print("Escribe el primer entero: ");<br>
-                numero2 = entrada.nextInt();<br>
+                <br> System.out.print("Escriba el segundo entero: ");
+                <br> y = sc.nextInt();
                 <br>
-                suma = numero1 + numero2;<br>
-                resta = numero1 - numero2;<br>
-                multiplicacion = numero1 * numero2;<br>
-                division = numero1 / numero2;<br>
+                <br> System.out.print("Escriba el tercer entero: ");
+                <br> z = sc.nextInt();
                 <br>
-                System.out.printf("La suma es %d%n", suma);<br>
-                System.out.printf("La resta es %d%n", resta);<br>
-                System.out.printf("La multiplicación es %d%n", multiplicacion);<br>
-                System.out.printf("La división es %d%n", division);<br>
-                }<br>
+                <br> resultado = x * y * z;
+                <br>
+                <br> System.out.println("El producto es: " + resultado);
+                <br>}
                 <br>
                 }
             </code>
@@ -73,42 +69,45 @@
     </div>
 
     <div class="seccion" id="b">
-        <h1>2.- (Comparación de enteros)</h1>
-        <P>Escriba una aplicación que pida al usuario que escriba dos enteros, que obtenga los números del usuario y
-            muestre el número más grande, seguido de las palabras “<i>es más grande</i>”. Si los números son iguales,
-            imprima el mensaje “<i>Estos números son iguales</i>”.</P>
+        <h1>Ejercicio 01_02: Aritmetica.java</h1>
+        <P>Escriba una aplicación que pida al usuario que escriba dos números, que obtenga los números del usuario e
+            imprima la suma, producto, diferencia y cociente (división) de los números.</P>
         <div class="targeta">
             <code>
-                // Ejemplo 2: ComparacionDeEnteros.java<br>
-                // Programa que recibe dos números y muestra el número más grande, seguido de las palabras "es más
-                grande".<br>
-                // Si los números son iguales, imprime el mensaje "Estos números son iguales".<br>
-                package ex02_16;<br>
+                // Ejercicio 01_02: Aritmetica.java
+                <br>// Programa que recibe dos números y muestra la suma, resta, multipliacaión y división.
+                <br>package ex01_02;
                 <br>
-                import java.util.Scanner;<br>
-                public class ComparacionDeEnteros {<br>
+                <br>import java.util.Scanner;
                 <br>
-                public static void main(String[] args) {<br>
-                Scanner entrada = new Scanner(System.in);<br>
+                <br>public class Aritmetica {
                 <br>
-                int numero1;<br>
-                int numero2;<br>
+                <br>public static void main(String[] args) {
+                <br>Scanner sc = new Scanner(System.in);
                 <br>
-                System.out.print("Escriba el primer entero: ");<br>
-                numero1 = entrada.nextInt();<br>
+                <br>int numero1;
+                <br>int numero2;
+                <br>int suma;
+                <br>int resta;
+                <br>int multiplicacion;
+                <br>int division;
                 <br>
-                System.out.print("Escriba el segundo entero: ");<br>
-                numero2 = entrada.nextInt();<br>
+                <br>System.out.print("Escribe el primer entero: ");
+                <br>numero1 = sc.nextInt();
                 <br>
-                if (numero1 > numero2)<br>
-                System.out.printf("%d es más grande%n", numero1);<br>
+                <br>System.out.print("Escribe el primer entero: ");
+                <br>numero2 = sc.nextInt();
                 <br>
-                if (numero2 > numero1)<br>
-                System.out.printf("%d es más grande%n", numero2);<br>
+                <br>suma = numero1 + numero2;
+                <br>resta = numero1 - numero2;
+                <br>multiplicacion = numero1 * numero2;
+                <br>division = numero1 / numero2;
                 <br>
-                if (numero1 == numero2)<br>
-                System.out.printf("Estos números son iguales%n");<br>
-                }<br>
+                <br>System.out.println("La suma es: " + suma);
+                <br>System.out.println("La resta es: " + resta);
+                <br>System.out.println("La multiplicación es: " + multiplicacion);
+                <br>System.out.println("La división es: " + division);
+                <br>}
                 <br>
                 }
             </code>
@@ -116,181 +115,226 @@
     </div>
 
     <div class="seccion" id="c">
-        <h1>3.- (Aritmética: menor y mayor)</h1>
+        <h1>Ejercicio 01_03: ComparacionDeEnteros.java</h1>
+        <p>Escriba una aplicación que pida al usuario que escriba dos enteros, que obtenga los números del usuario y
+            muestre el número más grande, seguido de las palabras “<i>es más grande</i>”. Si los números son iguales,
+            imprima el mensaje “<i>Estos números son iguales</i>”.</p>
+        <div class="targeta">
+            <code>
+                // Ejercicio 01_03: ComparacionDeEnteros.java
+                <br>// Programa que recibe dos números y muestra el número más grande, seguido de las palabras "es más
+                grande".
+                <br>// Si los números son iguales, imprime el mensaje "Estos números son iguales".
+                <br>package ex01_03;
+                <br>
+                <br>import java.util.Scanner;
+                <br>
+                <br>public class ComparacionEnteros {
+                <br>
+                <br>public static void main(String[] args) {
+                <br>Scanner sc = new Scanner(System.in);
+                <br>
+                <br>int numero1;
+                <br>int numero2;
+                <br>
+                <br>System.out.print("Escriba el primer entero: ");
+                <br>numero1 = sc.nextInt();
+                <br>
+                <br>System.out.print("Escriba el segundo entero: ");
+                <br>numero2 = sc.nextInt();
+                <br>
+                <br>if (numero1 > numero2) {
+                <br>System.out.println(numero1 + " es más grande");
+                <br>}
+                <br>
+                <br>if (numero2 > numero1) {
+                <br>System.out.println(numero2 + " es más grande");
+                <br>}
+                <br>
+                <br>if (numero1 == numero2) {
+                <br>System.out.println("Estos números son iguales");
+                <br>}
+                <br>}
+                <br>
+                }
+            </code>
+        </div>
+    </div>
+
+    <div class="seccion" id="d">
+        <h1>Ejercicio 01_04: AritmeticaMenorMayor.java</h1>
         <p>Escriba una aplicación que reciba tres enteros del usuario y muestre la suma, promedio, producto, menor y
             mayor de esos números.</p>
         <div class="targeta">
             <code>
-                // Ejemplo 3: AritmeticaMenorMayor.java<br>
-                // Aplicación que recibe tres enteros y muestre la suma, promedio, producto, menor y mayor de esos
-                números.<br>
-                package ex02_17;<br>
-                import java.util.Scanner;<br>
+                <br>// Ejercicio 01_04: AritmeticaMenorMayor.java
+                <br>// Aplicación que recibe tres enteros y muestre la suma, promedio, producto, menor y mayor de esos
+                números.
+                <br>package ex01_04;
                 <br>
-                public class AritmeticaMenorMayor {<br>
+                <br>import java.util.Scanner;
                 <br>
-                public static void main(String[] args) {<br>
-                Scanner entrada = new Scanner(System.in);<br>
+                <br>public class AritmeticaMenorMayor {
                 <br>
-                int numero1;<br>
-                int numero2;<br>
-                int numero3;<br>
-                int suma;<br>
-                int promedio;<br>
-                int producto;<br>
+                <br>public static void main(String[] args) {
+                <br>Scanner sc = new Scanner(System.in);
                 <br>
-                System.out.print("Escriba el primer entero: ");<br>
-                numero1 = entrada.nextInt();<br>
+                <br>int numero1;
+                <br>int numero2;
+                <br>int numero3;
+                <br>int suma;
+                <br>int promedio;
+                <br>int producto;
                 <br>
-                System.out.print("Escriba el segundo entero: ");<br>
-                numero2 = entrada.nextInt();<br>
+                <br>System.out.print("Escriba el primer entero: ");
+                <br>numero1 = sc.nextInt();
                 <br>
-                System.out.print("Escriba el tercer entero: ");<br>
-                numero3 = entrada.nextInt();<br>
+                <br>System.out.print("Escriba el segundo entero: ");
+                <br>numero2 = sc.nextInt();
                 <br>
-                suma = numero1 + numero2 + numero3;<br>
-                promedio = suma / 3;<br>
-                producto = numero1 * numero2 * numero3;<br>
+                <br>System.out.print("Escriba el tercer entero: ");
+                <br>numero3 = sc.nextInt();
                 <br>
-                System.out.printf("La suma es %d%n", suma);<br>
-                System.out.printf("El promedio es %d%n", promedio);<br>
-                System.out.printf("El producto es %d%n", producto);<br>
+                <br>suma = numero1 + numero2 + numero3;
+                <br>promedio = suma / 3;
+                <br>producto = numero1 * numero2 * numero3;
                 <br>
-                if (numero1 < numero2)<br>
-                    if (numero1 < numero3)<br>
-                        System.out.printf("%d es el menor%n", numero1);<br>
+                <br>System.out.println("La suma es: " + suma);
+                <br>System.out.println("El promedio es: " + promedio);
+                <br>System.out.println("El producto es: " + producto);
+                <br>
+                <br>if (numero1 < numero2) <br>if (numero1 < numero3) <br>System.out.println(numero1 + " es el menor" );
                         <br>
-                        if (numero2 < numero1)<br>
-                            if (numero2 < numero3)<br>
-                                System.out.printf("%d es el menor%n", numero2);<br>
+                        <br>if (numero2 < numero1) <br>if (numero2 < numero3) <br>System.out.println(numero2 + " es el
+                                menor" );
                                 <br>
-                                if (numero3 < numero1)<br>
-                                    if (numero3 < numero2)<br>
-                                        System.out.printf("%d es el menor%n", numero3);<br>
+                                <br>if (numero3 < numero1) <br>if (numero3 < numero2) <br>System.out.println(numero3 + "
+                                        es el menor" );
                                         <br>
-                                        if (numero1 > numero2)<br>
-                                        if (numero1 > numero3)<br>
-                                        System.out.printf("%d es el mayor%n", numero1);<br>
+                                        <br>if (numero1 > numero2)
+                                        <br>if (numero1 > numero3)
+                                        <br>System.out.println(numero1 + " es el mayor");
                                         <br>
-                                        if (numero2 > numero1)<br>
-                                        if (numero2 > numero3)<br>
-                                        System.out.printf("%d es el mayor%n", numero2);<br>
+                                        <br>if (numero2 > numero1)
+                                        <br>if (numero2 > numero3)
+                                        <br>System.out.println(numero2 + " es el mayor");
                                         <br>
-                                        if (numero3 > numero1)<br>
-                                        if (numero3 > numero2)<br>
-                                        System.out.printf("%d es el mayor%n", numero3);<br>
-                                        }<br>
+                                        <br>if (numero3 > numero1)
+                                        <br>if (numero3 > numero2)
+                                        <br>System.out.println(numero3 + " es el mayor");
+                                        <br>}
                                         <br>
                                         }
             </code>
         </div>
     </div>
 
-    <div class="seccion" id="d">
-        <h1>4.- (Enteros menor y mayor)</h1>
+    <div class="seccion" id="e">
+        <h1>Ejercicio 01_05: EnterosMenorMayor.java</h1>
         <p>Escriba una aplicación que lea cinco enteros y que determine e imprima los enteros mayor y menor en el grupo.
         </p>
         <div class="targeta">
             <code>
-                // Ejemplo 4: EnterosMenorMayor.java<br>
-                // Aplicación que lee cinco enteros y que determina e imprime los enteros mayor y menor en el grupo.<br>
+                <br>// Ejercicio 01_05: EnterosMenorMayor.java
+                <br>// Aplicación que lee cinco enteros y que determina e imprime los enteros mayor y menor en el grupo.
+                <br>package ex01_05;
                 <br>
-                import java.util.Scanner;<br>
+                <br>import java.util.Scanner;
                 <br>
-                public class EnterosMenorMayor {<br>
-                    <br>
-                    public static void main(String[] args) {<br>
-                        Scanner entrada = new Scanner(System.in);<br>
-                        <br>
-                        int numero1;<br>
-                        int numero2;<br>
-                        int numero3;<br>
-                        int numero4;<br>
-                        int numero5;<br>
-                        <br>
-                        System.out.print("Escriba el primer entero: ");<br>
-                        numero1 = entrada.nextInt();<br>
-                        <br>
-                        System.out.print("Escriba el segundo entero: ");<br>
-                        numero2 = entrada.nextInt();<br>
-                        <br>
-                        System.out.print("Escriba el tercer entero: ");<br>
-                        numero3 = entrada.nextInt();<br>
-                        <br>
-                        System.out.print("Escriba el cuarto entero: ");<br>
-                        numero4 = entrada.nextInt();<br>
-                        <br>
-                        System.out.print("Escriba el quinto entero: ");<br>
-                        numero5 = entrada.nextInt();<br>
-                        <br>
-                        if (numero1 > numero2)<br>
-                            if (numero1 > numero3)<br>
-                                if (numero1 > numero4)<br>
-                                    if (numero1 > numero5)<br>
-                                        System.out.printf("%d es el mayor%n", numero1);<br>
-                                        <br>
-                        if (numero2 > numero1)<br>
-                            if (numero2 > numero3)<br>
-                                if (numero2 > numero4)<br>
-                                    if (numero2 > numero5)<br>
-                                        System.out.printf("%d es el mayor%n", numero2);<br>
-                                        <br>
-                        if (numero3 > numero1)<br>
-                            if (numero3 > numero2)<br>
-                                if (numero3 > numero4)<br>
-                                    if (numero3 > numero5)<br>
-                                        System.out.printf("%d es el mayor%n", numero3);<br>
-                                        <br>
-                        if (numero4 > numero1)<br>
-                            if (numero4 > numero2)<br>
-                                if (numero4 > numero3)<br>
-                                    if (numero4 > numero5)<br>
-                                        System.out.printf("%d es el mayor%n", numero4);<br>
-                                        <br>
-                        if (numero5 > numero1)<br>
-                            if (numero5 > numero2)<br>
-                                if (numero5 > numero3)<br>
-                                    if (numero5 > numero4)<br>
-                                        System.out.printf("%d es el mayor%n", numero5);<br>
-                                        <br>
-                        if (numero1 < numero2)<br>
-                            if (numero1 < numero3)<br>
-                                if (numero1 < numero4)<br>
-                                    if (numero1 < numero5)<br>
-                                        System.out.printf("%d es el menor%n", numero1);<br>
-                                        <br>
-                        if (numero2 < numero1)<br>
-                            if (numero2 < numero3)<br>
-                                if (numero2 < numero4)<br>
-                                    if (numero2 < numero5)<br>
-                                        System.out.printf("%d es el menor%n", numero2);<br>
-                                        <br>
-                        if (numero3 < numero1)<br>
-                            if (numero3 < numero2)<br>
-                                if (numero3 < numero4)<br>
-                                    if (numero3 < numero5)<br>
-                                        System.out.printf("%d es el menor%n", numero3);<br>
-                                        <br>
-                        if (numero4 < numero1)<br>
-                            if (numero4 < numero2)<br>
-                                if (numero4 < numero3)<br>
-                                    if (numero4 < numero5)<br>
-                                        System.out.printf("%d es el menor%n", numero4);<br>
-                                        <br>
-                        if (numero5 < numero1)<br>
-                            if (numero5 < numero2)<br>
-                                if (numero5 < numero3)<br>
-                                    if (numero5 < numero4)<br>
-                                        System.out.printf("%d es el menor%n", numero5);<br>
-                                        <br>
-                    }<br>
-                    <br>
-                }
-            </code>
-        </div>
-    </div>
-
+                <br>public class EnterosMayorMenor {
+                <br>
+                <br>public static void main(String[] args) {
+                <br>Scanner entrada = new Scanner(System.in);
+                <br>
+                <br>int numero1;
+                <br>int numero2;
+                <br>int numero3;
+                <br>int numero4;
+                <br>int numero5;
+                <br>
+                <br>System.out.print("Escriba el primer entero: ");
+                <br>numero1 = entrada.nextInt();
+                <br>
+                <br>System.out.print("Escriba el segundo entero: ");
+                <br>numero2 = entrada.nextInt();
+                <br>
+                <br>System.out.print("Escriba el tercer entero: ");
+                <br>numero3 = entrada.nextInt();
+                <br>
+                <br>System.out.print("Escriba el cuarto entero: ");
+                <br>numero4 = entrada.nextInt();
+                <br>
+                <br>System.out.print("Escriba el quinto entero: ");
+                <br>numero5 = entrada.nextInt();
+                <br>
+                <br>if (numero1 > numero2)
+                <br>if (numero1 > numero3)
+                <br>if (numero1 > numero4)
+                <br>if (numero1 > numero5)
+                <br>System.out.println(numero1 + " es el mayor");
+                <br>
+                <br>if (numero2 > numero1)
+                <br>if (numero2 > numero3)
+                <br>if (numero2 > numero4)
+                <br>if (numero2 > numero5)
+                <br>System.out.println(numero2 + " es el mayor");
+                <br>
+                <br>if (numero3 > numero1)
+                <br>if (numero3 > numero2)
+                <br>if (numero3 > numero4)
+                <br>if (numero3 > numero5)
+                <br>System.out.println(numero3 + " es el mayor");
+                <br>
+                <br>if (numero4 > numero1)
+                <br>if (numero4 > numero2)
+                <br>if (numero4 > numero3)
+                <br>if (numero4 > numero5)
+                <br>System.out.println(numero4 + " es el mayor");
+                <br>
+                <br>if (numero5 > numero1)
+                <br>if (numero5 > numero2)
+                <br>if (numero5 > numero3)
+                <br>if (numero5 > numero4)
+                <br>System.out.println(numero5 + " es el mayor");
+                <br>
+                <br>if (numero1 < numero2)
+                <br>if (numero1 < numero3)
+                <br>if (numero1 < numero4)
+                <br>if (numero1 < numero5)
+                <br>System.out.println(numero1 + " es el menor" );
+                <br>
+                <br>if (numero2 < numero1)
+                <br>if (numero2 < numero3)
+                <br>if (numero2 < numero4)
+                <br>if (numero2 < numero5)
+                <br>System.out.println(numero2 + " es el menor" );
+                <br>
+                <br>if (numero3 < numero1)
+                <br>if (numero3 < numero2)
+                <br>if (numero3 < numero4)
+                <br>if (numero3 < numero5)
+                <br>System.out.println(numero3 + " es el menor" );
+                <br>
+                <br>if (numero4 < numero1)
+                <br>if (numero4 < numero2)
+                <br>if (numero4 < numero3)
+                <br>if (numero4 < numero5)
+                <br>System.out.println(numero4 + " es el menor" );
+                <br>
+                <br>if (numero5 < numero1)
+                <br>if (numero5 < numero2)
+                <br>if (numero5 < numero3)
+                <br>if (numero5 < numero4)
+                <br>System.out.println(numero5 + " es el menor" );
+                <br>}
+                <br>
+            }
+            </code> 
+        </div> 
+    </div> 
+            
     <div class="submenu"><a href="aed-1008.html">Fundamentos de Programación -- Regresar</a><span class="subindicador" id="subindicador"></span></div>
+    
     <script src="../js/app.js"></script>
 </body>
 
