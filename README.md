@@ -1,4 +1,10 @@
-### Hi there 👋
+# AZTLANGEEKS
+
+### Aprende Ingeniería en Sistemas Computacionales con Ejercicios Resueltos.
+
+Visita nuestro Blog [aztlangeeks.blogspot.com](https://aztlangeeks.blogspot.com/) y encuentra artículos actualizados sobre temas de ISC.
+
+![Logo de AZTLANGEEKS](https://aztlangeeks.github.io/img/logo-aztlangeeks.png)
 
 <!--
 **aztlangeeks/aztlangeeks** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
