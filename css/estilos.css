@@ -173,6 +173,10 @@ nav .indicador {
 	box-shadow: rgba(15, 55, 77, .3) 0px 8px 24px;
 }
 
+.seccion .targeta li a {
+	text-align: left;
+}
+
 .seccion .targeta pre {
 	white-space: pre-wrap;
 }
@@ -206,6 +210,19 @@ nav .indicador {
 	text-align: center;
 	justify-content: center;
 	background-color: #993D43;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.seccion .swiper-slide .fab {
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 120px;
+	text-align: center;
+	justify-content: center;
+	background-color: #993D43;
+	color: #fff;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 }
@@ -269,7 +286,7 @@ nav .indicador {
 
 .seccion ul li a {
 	display: block;
-	padding: 20px;
+	padding: 15px;
 	/* padding: 1rem 1rem; */
 	background-color: #993D43;
 	color: #fafafa;
